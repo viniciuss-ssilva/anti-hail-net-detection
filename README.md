@@ -12,18 +12,15 @@ for detecting anti-hail nets in apple orchards in southern Brazil.
 
 - Sentinel-2 multispectral imagery
 - Google Earth Engine
-- K-means segmentation
-- Random Forest classification
-- 800 reference sample points
+- Pixel-based and object-based classification test
+- Final Random Forest classification
+- Classification and image post-processing
+- Calculation of evaluation metrics
 
 ## Study Area
 
-Apple-producing regions in Rio Grande do Sul, Brazil.
+Apple-producing regions in Vacaria - RS, Brazil.
 
 ## Results
 
-[figuras/mapas/resultados]
 
-## Technologies
-
-Python | Google Earth Engine | scikit-learn | Rasterio | NumPy
