@@ -5,7 +5,8 @@ satellite imagery and machine learning.
 
 ## Overview
 
-This project investigates the use of Sentinel-2 satellite imagery
+This project was supervised by researcher Dr. Marcia Helena Galina Dompieri
+and investigates the use of Sentinel-2 satellite imagery
 for detecting anti-hail nets in apple orchards in southern Brazil.
 
 ## Methodology
