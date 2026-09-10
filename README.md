@@ -22,7 +22,11 @@ Apple-producing regions in Rio Grande do Sul, Brazil.
 
 ## Results
 
-[figuras/mapas/resultados]
+![Figure 1. Visual vectorization; Pixel-based Random Forest classifier.](figures/Zoom2-VetorizacaoReal_X_VetorizacaoModeloRF.png)
+Figure 1. Visual vectorization; Pixel-based Random Forest classifier.
+
+![Figure 2. Visual vectorization; Object-Based Image Analysis (OBIA) Random Forest classifier.](figures/Zoom2_VetorizacaoReal_X_VetorizacaoModeloKMeans+RF.png)
+Figure 2. Visual vectorization; Object-Based Image Analysis (OBIA) Random Forest classifier.
 
 ## Technologies
 
