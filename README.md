@@ -5,20 +5,22 @@ satellite imagery and machine learning.
 
 ## Overview
 
-This project investigates the use of Sentinel-2 satellite imagery
+This project was supervised by researcher Dr. Marcia Helena Galina Dompieri
+and investigates the use of Sentinel-2 satellite imagery
 for detecting anti-hail nets in apple orchards in southern Brazil.
 
 ## Methodology
 
 - Sentinel-2 multispectral imagery
 - Google Earth Engine
-- K-means segmentation
-- Random Forest classification
-- 800 reference sample points
+- Pixel-based and object-based classification test
+- Final Random Forest classification
+- Classification and image post-processing
+- Calculation of evaluation metrics
 
 ## Study Area
 
-Apple-producing regions in Rio Grande do Sul, Brazil.
+Apple-producing regions in Vacaria - RS, Brazil.
 
 ## Results
 
@@ -28,6 +30,3 @@ Figure 1. Visual vectorization; Pixel-based Random Forest classifier.
 ![Figure 2. Visual vectorization; Object-Based Image Analysis (OBIA) Random Forest classifier.](figures/Zoom2_VetorizacaoReal_X_VetorizacaoModeloKMeans+RF.png)
 Figure 2. Visual vectorization; Object-Based Image Analysis (OBIA) Random Forest classifier.
 
-## Technologies
-
-Python | Google Earth Engine | scikit-learn | Rasterio | NumPy
