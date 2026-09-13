@@ -6,8 +6,6 @@ The growing use of anti-hail nets in apple orchards has contributed to mitigatin
 
 ## Methodology
 
-## Methodology
-
 Sentinel-2 MSI Level-2A surface reflectance imagery was used, considering the blue (B2), green (B3), red (B4), and near-infrared (B8) bands, all with a 10 m spatial resolution. Cloud masking and scene selection were performed to generate a cloud-free mosaic covering the study area. Spectral indices, including the Normalized Difference Vegetation Index (NDVI), were also calculated to improve the discrimination of spectrally similar classes.
 
 Two classification approaches were evaluated: pixel-based classification and object-based image analysis (OBIA). Both approaches used the supervised Random Forest algorithm. For OBIA, image segmentation was performed using the unsupervised K-means algorithm to group pixels according to their spectral characteristics and spatial patterns.
@@ -17,8 +15,6 @@ Four thematic classes were considered: orchards protected by anti-hail nets, unp
 A spatial post-processing step based on neighborhood analysis was applied to reduce isolated classification errors and improve the spatial consistency of the resulting maps. The pixel-based and OBIA classifications were then compared in terms of the total area identified as protected by anti-hail nets and the accuracy of the target-class detection.
 
 As an additional reference for validation, the areas protected by anti-hail nets were manually digitized through visual interpretation of the satellite imagery.
-
-## Study Area
 
 ## Study Area
 
@@ -38,7 +34,21 @@ The pixel-based Random Forest classification achieved the best overall performan
 
 The OBIA approach also produced satisfactory results, but with slightly lower performance: an overall accuracy of 0.74, a kappa coefficient of 0.65, and a target-class precision of 0.93 (Table 1). The pixel-based approach presented lower omission and commission errors, while the OBIA classification showed a greater tendency toward overestimation, particularly in areas where secondary vegetation exhibited spectral characteristics similar to those of plastic coverings.
 
+Table 1. Accuracy values for Random Forest classification using pixel-based and object-based (OBIA) approaches
+| Model         | Kappa index | Overall accuracy | Class precision |
+|---------------|-------------|------------------|-----------------|
+| Pixel-based   | 0.68        | 0.76             | 0.95            |
+| OBIA          | 0.65        | 0.74             | 0.93            |
+
+
 The estimated area covered by anti-hail nets also varied according to the classification method (Table 2). Visual digitization, used as the reference method, identified 15.8 km² of protected area. The pixel-based classification estimated 18.7 km², whereas OBIA estimated 19.9 km². Thus, the pixel-based approach overestimated the reference area by 2.9 km² (18.3%), while OBIA overestimated it by 4.1 km² (26.0%).
+
+Table 2. Area values (km²) of crops covered by hail-protection nets using different approaches
+| Approach             | Estimated area (km²) | Absolute error | Percentage error (%) |
+|----------------------|----------------------|----------------|----------------------|
+| Pixel-based          | 18.7                 | 2.9            | 18.3                 |
+| OBIA                 | 19.9                 | 4.1            | 26.0                 |
+| Visual vectorization | 15.8                 | —              | —                    |
 
 The greater overestimation observed in the OBIA results may be related to limitations in the K-means segmentation process, which can inadequately delineate areas of interest in heterogeneous agricultural landscapes. Spectrally similar targets, such as anti-hail nets and sparse vegetation or exposed soil, may be grouped into the same objects, increasing the inclusion of adjacent areas.
 
@@ -62,7 +72,7 @@ The preliminary experiments conducted using the expanded dataset indicate promis
 
 A preliminary result of the ongoing workflow is presented in Figure 3, showing the first classification produced for a smaller portion of the expanded study area.
 
-
+![Figure 3. Preliminary classification result generated using the Random Forest.](figures/randomforestpython.png)
 Figure 3. Preliminary classification result generated using the Random Forest algorithm during the ongoing expansion of the project, showing a subset of the broader study area.
 
 Because the project is part of an ongoing scientific research effort, some datasets, intermediate products, and updated results are subject to data-sharing restrictions. Therefore, this repository currently provides the code and results associated with the published study, developed in Google Earth Engine, while the ongoing Python-based expansion is presented only through selected preliminary results.
