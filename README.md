@@ -54,8 +54,6 @@ Figure 2. Visual vectorization; Object-Based Image Analysis (OBIA) Random Forest
 
 ## Future Developments
 
-## Future Developments
-
 The project is currently being expanded to a broader study area, covering apple-producing regions in both Rio Grande do Sul and Santa Catarina, Brazil. In parallel, the processing and classification workflow is being migrated from Google Earth Engine to Python, enabling the investigation of more advanced machine learning and image processing techniques.
 
 The expanded methodology includes the incorporation of two additional classes — agricultural structures and water bodies — as well as the short-wave infrared (SWIR) bands, which may provide additional spectral information for distinguishing anti-hail nets from surrounding land-cover types.
